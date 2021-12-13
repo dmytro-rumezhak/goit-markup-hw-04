@@ -10,6 +10,7 @@
   --copyright-link-color: rgba(255, 255, 255, 0.6);
   --color-white: #ffffff;
   --color-black: #000000;
+  --icon-color: #afb1b8;
 }
 
 /* Скидання стилів */
@@ -93,9 +94,23 @@ body {
   display: inline-flex;
 }
 
+.header-contact-item {
+  display: inline-flex;
+  align-items: center;
+}
+
 .header-nav-item:not(:last-child),
 .header-contact-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-contact-item-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-contact-item:hover .header-contact-item-icon {
+  fill: var(--accent-color);
 }
 
 .header-nav-link,
@@ -123,10 +138,11 @@ body {
   color: var(--body-text-color);
 }
 
+.header-contact-item .header-contact-link:hover,
 .header-contact-item:hover .header-contact-link,
-.header-contact-item:focus .header-contact-link,
-.header-nav-item:hover .header-nav-link,
-.header-nav-item:focus .header-nav-link,
+.header-contact-item .header-contact-link:focus,
+.header-nav-item .header-nav-link:hover,
+.header-nav-item .header-nav-link:focus,
 .footer-contact-link:hover,
 .footer-contact-link:focus,
 .footer-address-link:hover,
@@ -203,13 +219,17 @@ body {
 .works-btn:focus {
   background-color: var(--accent-color);
   color: var(--button-hover-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Стилізація Героя */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--footer-color);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero .container {
@@ -256,6 +276,17 @@ body {
 
 .advantages-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantages-item-icon {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 0;
+  border-radius: 4px;
+
+  background-color: var(--background-select-color);
 }
 
 .advantages-title {
@@ -315,7 +346,7 @@ body {
 }
 
 .team-div-desc {
-  padding: 30px;
+  padding: 30px 32px;
 }
 
 .team-member-title,
@@ -329,6 +360,101 @@ body {
   margin-bottom: 10px;
   font-weight: 500;
   color: var(--body-title-color);
+}
+
+.team-member-desc {
+  margin-bottom: 16px;
+}
+
+.team-list-link {
+  display: inline-flex;
+}
+.team-link-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+}
+
+.team-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-link {
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-link-svg {
+  fill: var(--icon-color);
+}
+
+.team-link:hover .team-link-svg,
+.team-link:focus .team-link-svg {
+  fill: var(--color-white);
+}
+
+/* Стидізація Постоянние клиенты */
+.our-clients {
+  display: inline-flex;
+}
+.our-clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.our-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-clients-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.our-clients-logo {
+  fill: var(--icon-color);
+}
+
+.our-clients-link:hover .our-clients-logo,
+.our-clients-link:focus .our-clients-logo {
+  fill: var(--accent-color);
+}
+
+.our-clients-link:hover,
+.our-clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.footer > .container {
+  display: flex;
+}
+
+.footer-left-container {
+  margin-right: 70px;
+}
+
+.footer-center-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link > .team-link-svg {
+  fill: var(--color-white);
 }
 
 /* Стилізація сторінки Портфолио */
@@ -347,6 +473,12 @@ body {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+}
+
+.works-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .works-item-list > .works-item {
