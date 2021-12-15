@@ -24,10 +24,10 @@
           <nav class="header-nav">
             <ul class="header-nav-list">
               <li class="header-nav-item">
-                <a href="./index.html" class="header-nav-link nav-active">Студия</a>
+                <a href="./index.html" class="header-nav-link">Студия</a>
               </li>
               <li class="header-nav-item">
-                <a href="./portfolio.html" class="header-nav-link">Портфолио</a>
+                <a href="./portfolio.html" class="header-nav-link nav-active">Портфолио</a>
               </li>
               <li class="header-nav-item"><a href="" class="header-nav-link">Контакты</a></li>
             </ul>
@@ -35,21 +35,24 @@
         </div>
         <ul class="header-contact-list">
           <li class="header-contact-item">
-            <svg class="header-contact-item-icon" width="16" height="16">
-              <use href="./images/icons.svg#mail-icon"></use>
-            </svg>
-            <a href="mailto:info@devstudio.com" class="header-contact-link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="header-contact-link">
+              <svg class="header-contact-item-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="header-contact-item">
-            <svg class="header-contact-item-icon" width="16" height="16">
-              <use href="./images/icons.svg#phone-icon"></use>
-            </svg>
-            <a href="tel:+380961111111" class="header-contact-link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="header-contact-link">
+              <svg class="header-contact-item-icon" width="12" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
     </header>
-
 
     <!-- main сторінки -->
     <main>
@@ -57,105 +60,113 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Примеры работ (нужно скрыть)</h1>
-        <ul class="works-nav">
-          <li class="works-item-nav"><button type="button" class="btn works-btn">Все</button></li>
-          <li class="works-item-nav"><button type="button" class="btn works-btn">Веб-сайты</button></li>
-          <li class="works-item-nav"><button type="button" class="btn works-btn">Приложения</button></li>
-          <li class="works-item-nav"><button type="button" class="btn works-btn">Дизайн</button></li>
-          <li class="works-item-nav"><button type="button" class="btn works-btn">Маркетинг</button></li>
-        </ul>
+          <ul class="works-nav">
+            <li class="works-item-nav"><button type="button" class="btn works-btn">Все</button></li>
+            <li class="works-item-nav">
+              <button type="button" class="btn works-btn">Веб-сайты</button>
+            </li>
+            <li class="works-item-nav">
+              <button type="button" class="btn works-btn">Приложения</button>
+            </li>
+            <li class="works-item-nav">
+              <button type="button" class="btn works-btn">Дизайн</button>
+            </li>
+            <li class="works-item-nav">
+              <button type="button" class="btn works-btn">Маркетинг</button>
+            </li>
+          </ul>
 
-        <ul class="works-item-list">
-          <li class="works-item">
-            <img src="./images/technocrack.jpg" alt="Веб-сайт фирмы Технокряк" width="370" />
-            <div class="works-item-desc">
-              <h2 class="works-item-title">Технокряк</h2>
-              <p class="works-item-desc-text">Веб-сайт</p>
-            </div>
-          </li>
-          <li class="works-item">
-            <img
-              src="./images/poster-new-orlean.jpg"
-              alt="Дизайн постера New Orlean vs Golden Star"
-              width="370"
-            />
-            <div class="works-item-desc">
-              <h2 class="works-item-title">Постер New Orlean vs Golden Star</h2>
-              <p class="works-item-desc-text">Дизайн</p>
-            </div>  
-          </li>
-          <li class="works-item">
-            <img
-              src="./images/restaurant-seafood.jpg"
-              alt="Приложение ресторана Seafood"
-              width="370"
-            />
-            <div class="works-item-desc">
-              <h2 class="works-item-title">Ресторан Seafood</h2>
-              <p class="works-item-desc-text">Приложение</p>
-            </div>
-          </li>
-          <li class="works-item">
-            <img src="./images/project-prime.jpg" alt="Маркетинг для проекта Prime" width="370" />
-            <div class="works-item-desc">
-              <h2 class="works-item-title">Проект Prime</h2>
-              <p class="works-item-desc-text">Маркетинг</p>
-            </div>
-          </li>
-          <li class="works-item">
-            <img src="./images/project-boxes.jpg" alt="Приложение для Boxes" width="370" />
-            <div class="works-item-desc">
-              <h2 class="works-item-title">Проект Boxes</h2>
-              <p class="works-item-desc-text">Приложение</p>
-            </div>
-          </li>
-          <li class="works-item">
-            <img
-              src="./images/inspiration-has-no-borders.jpg"
-              alt="Веб-сайт Inspiration has no Borders"
-              width="370"
-            />
-            <div class="works-item-desc">
-              <h2 class="works-item-title">Inspiration has no Borders</h2>
-              <p class="works-item-desc-text">Веб-сайт</p>
-            </div>
-          </li>
-          <li class="works-item">
-            <img
-              src="./images/publisher-limited-edition.jpg"
-              alt="Дизайн для издания Limited Edition"
-              width="370"
-            />
-            <div class="works-item-desc">
-              <h2 class="works-item-title">Издание Limited Edition</h2>
-              <p class="works-item-desc-text">Дизайн</p>
-            </div>
-          </li>
-          <li class="works-item">
-            <img src="./images/project-lab.jpg" alt="Маркетинг для проекта LAB" width="370" />
-            <div class="works-item-desc">
-              <h2 class="works-item-title">Проект LAB</h2>
-              <p class="works-item-desc-text">Маркетинг</p>
-            </div>
-          </li>
-          <li class="works-item">
-            <img
-              src="./images/growing-business.jpg"
-              alt="Приложение для Growing Business"
-              width="370"
-            />
-            <div class="works-item-desc">
-              <h2 class="works-item-title">Growing Business</h2>
-              <p class="works-item-desc-text">Приложение</p>
-            </div>
-          </li>
-        </ul>
+          <ul class="works-item-list">
+            <li class="works-item">
+              <img src="./images/technocrack.jpg" alt="Веб-сайт фирмы Технокряк" width="370" />
+              <div class="works-item-desc">
+                <h2 class="works-item-title">Технокряк</h2>
+                <p class="works-item-desc-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="works-item">
+              <img
+                src="./images/poster-new-orlean.jpg"
+                alt="Дизайн постера New Orlean vs Golden Star"
+                width="370"
+              />
+              <div class="works-item-desc">
+                <h2 class="works-item-title">Постер New Orlean vs Golden Star</h2>
+                <p class="works-item-desc-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="works-item">
+              <img
+                src="./images/restaurant-seafood.jpg"
+                alt="Приложение ресторана Seafood"
+                width="370"
+              />
+              <div class="works-item-desc">
+                <h2 class="works-item-title">Ресторан Seafood</h2>
+                <p class="works-item-desc-text">Приложение</p>
+              </div>
+            </li>
+            <li class="works-item">
+              <img src="./images/project-prime.jpg" alt="Маркетинг для проекта Prime" width="370" />
+              <div class="works-item-desc">
+                <h2 class="works-item-title">Проект Prime</h2>
+                <p class="works-item-desc-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="works-item">
+              <img src="./images/project-boxes.jpg" alt="Приложение для Boxes" width="370" />
+              <div class="works-item-desc">
+                <h2 class="works-item-title">Проект Boxes</h2>
+                <p class="works-item-desc-text">Приложение</p>
+              </div>
+            </li>
+            <li class="works-item">
+              <img
+                src="./images/inspiration-has-no-borders.jpg"
+                alt="Веб-сайт Inspiration has no Borders"
+                width="370"
+              />
+              <div class="works-item-desc">
+                <h2 class="works-item-title">Inspiration has no Borders</h2>
+                <p class="works-item-desc-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="works-item">
+              <img
+                src="./images/publisher-limited-edition.jpg"
+                alt="Дизайн для издания Limited Edition"
+                width="370"
+              />
+              <div class="works-item-desc">
+                <h2 class="works-item-title">Издание Limited Edition</h2>
+                <p class="works-item-desc-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="works-item">
+              <img src="./images/project-lab.jpg" alt="Маркетинг для проекта LAB" width="370" />
+              <div class="works-item-desc">
+                <h2 class="works-item-title">Проект LAB</h2>
+                <p class="works-item-desc-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="works-item">
+              <img
+                src="./images/growing-business.jpg"
+                alt="Приложение для Growing Business"
+                width="370"
+              />
+              <div class="works-item-desc">
+                <h2 class="works-item-title">Growing Business</h2>
+                <p class="works-item-desc-text">Приложение</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
 
     <!-- footer сайту -->
-     <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-left-container">
           <a href="./index.html" class="logo logo-footer"
@@ -191,7 +202,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="team-link-svg" width="20" height="20">
+                <svg class="team-link-svg">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -203,7 +214,9 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="team-link-svg" width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg>
+                <svg class="team-link-svg">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
               </a>
             </li>
             <li class="team-link-item">
@@ -213,7 +226,9 @@
                 target="_blank"
                 rel="noopener norferrer"
               >
-                <svg class="team-link-svg" width="20" height="20"><use href="./images/icons.svg#icon-facebook"></use></svg>
+                <svg class="team-link-svg">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
               </a>
             </li>
             <li class="team-link-item">
@@ -223,7 +238,9 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="team-link-svg" width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use></svg>
+                <svg class="team-link-svg">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
               </a>
             </li>
           </ul>
